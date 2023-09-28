@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header.ejs')%>
+<body>
+     <%- include('./partials/navlog.ejs') %>
+   <div  class = "month-container">
+            <button class="arrow-buttons" id="prev-month" onclick="prevMonth()">&lt;</button>
+            <p class="curr-month" id="current-month">November 2023</p>
+            <button class="arrow-buttons" id="next-month" onclick="nextMonth()">&gt;</button>
+    </div>
+    <div id="perm-div-container">
+    <div id="grid-container">
+    </div>
+</div>
+<div id="add-event-div-id" class = "add-event-div"></div>
+<div id="outer-add-div" class="outside-menu" onclick="outsideAddClicked()"></div>
+<button class="add-button-div" id="add-button" onclick="addEvent()">+ Add</button>
+    <script src = "./code/main.js"></script>
+    <script src = "./code/cal.js"></script>
+</body>
+</html>

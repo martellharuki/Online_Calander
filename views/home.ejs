@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header.ejs')%>
+<body>
+    <% if(logChecked == "true") { %>
+        <%- include('./partials/navlog.ejs') %>
+    <% } else { %>
+        <%- include('./partials/nav.ejs') %>
+    <% } %>
+    <div style="padding: 75px; background-color: #ebf2ed;">
+    <div id="feature-box-0"class="home-list-container" style="background-color: #afdbdb;" onclick="expandFeature(0)">
+        <p class="home-feature-element">Make Events</p>
+    </div>
+    <div id="feature-box-1"class="home-list-container" style="background-color: #d9a5d9;" onclick="expandFeature(1)">
+        <p class="home-feature-element">Add Members</p>
+    </div>
+    <div id="feature-box-2"class="home-list-container" style="background-color: #e39a9f;" onclick="expandFeature(2)">
+        <p class="home-feature-element">View Your Calander</p>
+    </div>
+    <div id="feature-box-3"class="home-list-container" style="background-color: #8db1c9" onclick="expandFeature(3)">
+        <p class="home-feature-element">Send Reminders</p>
+    </div>
+    <div id="feature-box-4"class="home-list-container" style="background-color: #edba93;" onclick="expandFeature(4)">
+        <p class="home-feature-element">Be Notified</p>
+    </div>
+    <div class="outside-menu" id="outside-menu-div" onclick="outerMenuClicked()"></div>
+</div>
+    <script src = "./code/main.js"></script>
+</body>
+</html>

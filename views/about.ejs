@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header.ejs')%>
+    <body>
+        <% if(logChecked == "true") { %>
+            <%- include('./partials/navlog.ejs') %>
+        <% } else { %>
+            <%- include('./partials/nav.ejs') %>
+        <% } %>
+            <h2 style="font-size: 45px; margin:10px;">About Us</h2>
+            <p style="font-size: 30px; margin:20px; max-width:1200px;">Hello my name is Haruki Martell and I am the sole
+                contributer to this page. I make various different
+                projects and this page just happens to be one of them. Some things about me is that I am a college
+                student at UC Davis and I created this site as a cool project for C++, but it was much more practical to
+                approach it using Javascript.</p>
+            <h2 style="font-size: 45px; margin:10px;">Contact Me</h2>
+            <p style="font-size: 30px; margin:20px; max-width:1200px;"> You can contact me through phone or by email.
+                However, I am more likely to pick up through phone. However, I do not understand why you would contact
+                me as only I see this page.</p>
+                <p style="font-size: 30px; margin:25px; max-width:1200px; padding-top: 5px; font-style: italic;">martellharuki@gmail.com</p>
+                <p style="font-size: 30px; margin:25px; max-width:1200px; padding-top: 5px; font-style: italic;">(669)265-9971</p>
+                <script src = "./code/main.js"></script>
+    </body>
+</html>

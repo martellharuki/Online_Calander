@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header.ejs')%>
+    <body>
+        <%- include('./partials/nav.ejs') %>
+        <div class = "background-color"></div>
+        <div class="error-box-log" id="error-box-log-div">
+            <p id = "error-box"></p>
+        </div>
+        <div class = "user-info-div">
+            <div class = "sign-info-container">
+                <p class="user-info-label">Group:</p>
+                <input type="text" id="group-entry" name="log-in" class="user-info-input">
+            </div>
+            <div class = "sign-info-container">
+                <p class="user-info-label">First:</p>
+                <input type="text" id="first-entry" name="log-in" class="user-info-input">
+                <p class="user-info-label">Last:</p>
+                <input type="text" id="last-entry" name="log-in" class="user-info-input">
+            </div>
+            <div class = "sign-info-container">
+                <p class="user-info-label">Email:</p>
+                <input type="text" id="email-entry" name="log-in" class="user-info-input">
+            </div>
+            <div class = "sign-info-container">
+                <p class="user-info-label">Username:</p>
+                <input type="text" id="username-entry" name="log-in" class="user-info-input">
+            </div>
+            <div class = "sign-info-container">
+                <p class="user-info-label">Password:</p>
+                <input type="text"id="password-entry" name="log-in" class="user-info-input">
+            </div>
+            <div class = "sign-info-container">
+                <input type="checkbox" id="new-group-check" name="log-in" style="height:30px; width:30px">
+                <label for="new-group-check" class="user-info-input"style="margin-left: 10px">Create New Group</label>
+            </div>
+            <div style="display: flex; justify-content: center;">
+            <button style="display:flex;justify-content: center;align-items: center; height:100px; width:300px;border-radius: 30px;background-color: #c7c7c7; font-size:40px;cursor: pointer;" onclick="signUpButtonClicked()">Sign Up</button>
+        </div>
+        </div>
+        <script src = "./code/main.js"></script>
+    </body>
+</html>

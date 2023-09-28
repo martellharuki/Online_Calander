@@ -1,0 +1,16 @@
+<div class = "nav-background">
+    <h1 style="position: relative; font-size: 55px; color:#525252; margin-left: 10px;">Hoogle Calander</h1>
+    <p style="position: relative; top: 10px; font-size: 30px; font-style: italic; margin-left: 120px;">Hoogle, A Homemade Approach to Calanders</p>
+</div>
+<div id="menu-div" style="position: absolute; right: 0; top: 0"><div style="position: sticky; top: 0px; width:100%"><img class="menu-icon" src="assets/images/Hamburger_icon.png" alt="Menu Icon" onclick="menuClicked()"></img></div></div>
+<div id = "menu-toggled-div" class="toggle-menu-div">
+    <ul class = "nav-link-div">
+        <li class = "nav-link"><a onclick="toHome()">Home Page</a></li>
+        <li class = "nav-link"><a onclick="toAbout()">About Us</a></li>
+        <li class = "nav-link"><a onclick="toLog()">Log In</a></li>
+        <li class = "nav-link"><a onclick="toSign()">Sign Up</a></li>
+        <li class = "nav-link"><a onclick="toHelp()">Help</a></li>
+    </ul>
+    <img class="calander-icon" id = "calander-image" src = "assets/images/calander-icon.png">
+</div>
+<div class="outside-menu" id="outside-menu-div" onclick="outerMenuClicked()"></div>

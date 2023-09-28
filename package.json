@@ -1,0 +1,16 @@
+{
+  "name": "hoogle_calander",
+  "version": "1.0.0",
+  "description": "Online Calander",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Haruki Martell",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
